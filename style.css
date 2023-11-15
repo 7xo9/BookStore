@@ -1,0 +1,232 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+
+.bg{
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url("https://c1.wallpaperflare.com/preview/127/366/443/library-book-bookshelf-read.jpg");
+
+}
+
+.qoute{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    width: 100vw;
+}
+
+.talk{
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+}
+
+#con{
+    background-color: #faf6f05d;
+    display: flex;
+    width: 50vw;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+
+    
+}
+#Booksimage{
+
+  
+
+}
+#bookCon{
+    width: 100vw;
+    height: 200vh;
+ 
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.newDiv{
+    width: 20vw; height: 100vh; display: flex; justify-content: center; align-items: center; gap: 1px; flex-direction: column; 
+     border: soild 3px black ;
+
+}
+
+/* Sing up page */
+
+#card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.card{
+    width: 40vw;
+    height: 50vh;
+}
+
+.inputs{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.in{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35vw;
+}
+
+/* delete button */
+
+.delBTN{
+    width: 7vw;
+    margin-top: 10px;
+    
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    padding: 0 16px;
+    background-color: #0070d2;
+    border-radius: 0.25rem;
+    border: 1px solid #0070d2;
+    color: #fff;
+    font-size: 13px;
+    line-height: 30px;
+    font-weight: 400;
+    text-align: center;
+
+}
+
+
+
+/* Media */
+@media (max-width: 750px) {
+
+    .bigDiv{
+        width: 100vw;
+      
+    }
+    .newDiv{
+        width: 100vw; height: 100vh; 
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        gap: 1px; 
+        flex-direction: column; 
+        
+    }
+    
+    .imgDiv{
+        width: 100vw; height: 50vh; 
+        background-size: auto; background-repeat: no-repeat; 
+        display:flex; justify-content: center; align-items: center; 
+        flex-direction: column; 
+    }
+
+    #logo{
+        width: 10vw;
+    }
+
+    .talk{
+        display: flex;
+        flex-direction: column;
+        width: 50vw;
+    }   
+}
+
+@media (max-width: 900px) {
+
+    .newDiv{
+        width: 50vw; height: 100vh; 
+        display: flex; justify-content: center; 
+        align-items: center; gap: 1px; flex-direction: column; 
+         border: soild 3px black ;
+
+    }
+    
+    .imgDiv{
+        width: 40vw; height: 80vh; 
+        background-size: auto; background-repeat: no-repeat; 
+        display:flex; justify-content: center; align-items: center; 
+    }
+
+    #logo{
+        width: 10vw;
+    }
+
+    .talk{
+        display: flex;
+        flex-direction: column;
+        width: 50vw;
+    }   
+}
+
+@media (max-width: 1200px) {
+
+    .newDiv{
+        width: 50vw; height: 100vh; 
+        display: flex; justify-content: center; 
+        align-items: center; gap: 1px; flex-direction: column; 
+         border: soild 3px black ;
+
+    }
+    
+    .imgDiv{
+        width: 30vw; height: 80vh; 
+        background-size: auto; background-repeat: no-repeat; 
+        display:flex; justify-content: center; align-items: center; 
+    }
+
+    #logo{
+        width: 10vw;
+    }
+
+    .talk{
+        display: flex;
+        flex-direction: column;
+        width: 50vw;
+    }   
+}
+
+@media (min-width: 1200px) {
+
+    .newDiv{
+        
+        width: 30vw; height: 100vh; 
+        display: flex; justify-content: center; 
+        align-items: center; gap: 1px; flex-direction: column; 
+        
+
+    }
+    
+    .imgDiv{
+        width: 20vw; height: 58vh; 
+        background-size: auto; background-repeat: no-repeat; 
+        display:flex; justify-content: center; align-items: center; 
+        
+        border: 2px solid white;
+        box-shadow: 10px 10px 60px;
+    }
+
+    #logo{
+        width: 10vw;
+    }
+
+    .talk{
+        display: flex;
+        flex-direction: column;
+        width: 24vw;
+    }   
+}
