@@ -47,6 +47,7 @@ function gettingBooks(){
               newDiv.appendChild(deleteBTN)
               books.appendChild(newDiv)
               
+              
 
               deleteBTN.addEventListener("click", (id)=>{
                 fetch(`https://api.nytimes.com/svc/books/v3/lists/current/hardcover-fiction.json?api-key=5FXJDVFlJaeJFnnhodVVLJsz4vvcbFFC`, {
@@ -59,30 +60,26 @@ function gettingBooks(){
 
 
 
+              fetch("https://6552924d5c69a779032a2d8c.mockapi.io/usersInfo")
+              .then(res => res.json())
+              .then(data => {
                 
-        fetch("https://6552924d5c69a779032a2d8c.mockapi.io/usersInfo")
-        .then(res => res.json())
-        .then(data => {
+                  for (let i =0 ; i < data.length;i++){
+      
+                      let nameToSerach = data[i].userName
+                      
+                      let localN = localStorage.getItem("Name")
+      
+                     if (nameToSerach = "Admin1"){
+                          deleteBTN.style.cssText = "display: flex"
+                        }else{
+                            deleteBTN.style.cssText = "display: none"
 
-            let localN = localStorage.getItem("Name")
-           
+                        }
+                  }
+                  
+              })
 
-            for (let i =0 ; i < data.length;i++){
-
-                let nameToSerach = data[i].userName
-                if (nameToSerach.Auth = "U"){
-                    deleteBTN.style.cssText = "display: none"   
-                }else if (nameToSerach.Auth == "A"){
-                    
-                    deleteBTN.style.cssText = "display: flex"
-                    console.log(nameToSerach.Auth);
-                 
-             
-
-                }
-            }
-            
-        })
               
 
   

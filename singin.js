@@ -11,13 +11,15 @@ singinBtn.addEventListener("click", ()=>{
         fetch("https://6552924d5c69a779032a2d8c.mockapi.io/usersInfo")
             .then(res => res.json())
             .then(data => {;
+
                 for(let i =0; i < data.length; i++){
                     let userInDB = data[i].userName
                     let passInDB = data[i].Pasword
-                    console.log(userInDB);
+                    
                    
-
-                  if(uservalu == userInDB && passvalu == passInDB){
+                }
+                
+                if(uservalu == userInDB && passvalu == passInDB){
                    
                     alert("Welcome")
                     window.location.href = "singedin.html"
@@ -27,7 +29,8 @@ singinBtn.addEventListener("click", ()=>{
                     alert("The username or Password is incorrect")
                     
                   }
-                }})
+            
+            })
 
 
 
